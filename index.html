@@ -18,11 +18,14 @@
         </nav>
         <div class="logo-wrapper">
             <a>
-            <img  class="logo-header" src="img/sedona-logo.png" width="138" height="70" alt="Логотип">
+                <img  class="logo-header" src="img/sedona-logo.png" width="138" height="70" alt="Логотип-Седона">
             </a>
         </div>
     </header>
     <main class="container">
+        <div class="background-wrapper">
+            <img src="img/background-welcome-to-sedona.jpg" width="1200" height="508" alt="Фоновое изображение, горный пейзаж-Седона">
+        </div>
         <section class="greeting">
             <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
             <p class="deserves">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</p>
@@ -80,26 +83,32 @@
         <section class="form-search">
             <p>Заинтересовались?</p>
             <p>Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
+            <button class="button-open-form" type="button">Поиск гостиницы в Седоне</button>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                <h2>Поиск гостиницы в Седоне</h2>
-                <p class="search-form-item">
-                    <label for="arrival">Дата заезда:</label>
-                    <input id="arrival" type="text" name="data-arrival" placeholder="24 Апреля 2017">
-                </p>
-                <p class="search-form-item">
-                    <label for="departure">Дата выезда:</label>
-                    <input id="departure" type="text" name="data-departure" placeholder="4 Июля 2017">
-                </p>
-                <p class="search-form-item">
-                    <label for="adults">Взрослые:</label>
-                    <input id="adults" type="number" name="adults" placeholder="2">
-                    <label for="children">Дети:</label>
-                    <input id="children" type="number" name="children" placeholder="0">
-                </p>
-                <button class="button" type="submit">Найти</button>
+                <fieldset>
+                    <p class="search-form-item">
+                        <label for="arrival">Дата заезда:</label>
+                        <input id="arrival" type="text" name="data-arrival" value="24 Апреля 2017">
+                    </p>
+                    <p class="search-form-item">
+                        <label for="departure">Дата выезда:</label>
+                        <input id="departure" type="text" name="data-departure" value="4 Июля 2017">
+                    </p>
+                    <p class="search-form-item">
+                        <label for="adults">Взрослые:</label>
+                        <button class="minus" type="button">-</button>
+                        <input id="adults" type="text" name="adults" value="2">
+                        <button class="plus" type="button">+</button>
+                        <label for="children">Дети:</label>
+                        <button class="minus" type="button">-</button>
+                        <input id="children" type="text" name="children" value="0">
+                        <button class="plus" type="button">+</button>
+                    </p>
+                    <button class="button" type="submit">Найти</button>
+                </fieldset>
             </form>
             <p>
-            <img src="img/map.jpg" width="1200" height="593" alt="Расположение города Седона на карте.">
+                <img src="img/map.jpg" width="1200" height="593" alt="Расположение города Седона на карте">
             </p>
         </section>
     </main>
@@ -114,8 +123,8 @@
         </div>
         <div class="footer-logo">
             <p>Website by</p>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img class="logo" src="img/logo-name.png" width="115" height="41" alt="Логотип HTML Academy">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Перейти на сайт HTML Academy, интенсив уровень 1">
+                <img class="logo" src="img/logo-name.png" width="115" height="41" alt="Логотип HTML Academy">
             </a>
         </div>
     </footer>

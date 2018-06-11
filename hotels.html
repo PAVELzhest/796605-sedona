@@ -17,12 +17,15 @@
             </ul>
         </nav>
         <div class="logo-wrapper">
-            <a href="index.html">
-            <img  class="logo-header" src="img/sedona-logo.png" width="138" height="70" alt="Логотип">
+            <a href="index.html" aria-label="Перейти на главную страницу">
+                <img  class="logo-header" src="img/sedona-logo.png" width="138" height="70" alt="Логотип-Седона">
             </a>
         </div>
     </header>
     <main>
+        <div class="background-wrapper">
+            <img src="img/background-sedona.jpg" width="1200" height="562" alt="Фоновое изображение, горный пейзаж-Седона">
+        </div>
         <h1 class="visually-hidden">Гостиницы</h1>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
@@ -40,7 +43,7 @@
                         <input type="checkbox" name="wi-fi" id="filter-wi-fi">
                         <label for="filter-wi-fi">Wi-fi</label>
                     </li>
-                </ul>          
+                </ul>
             </fieldset>
             <fieldset>
                 <legend>Тип жилья:</legend>
@@ -60,24 +63,24 @@
                 </ul>
             </fieldset>
             <fieldset class="price">
-                    <legend>Стоимость в сутки (р):</legend>
-                    <div class="price-check">
-                        <div class="min-price">
-                            <label for="min">От</label>
-                            <input type="text" name="min-price" value="0" id="min">
-                        </div>
-                        <div class="max-price">
-                            <label for="max">До</label>
-                            <input type="text" name="max-price" value="3000" id="max">
-                        </div>
+                <legend>Стоимость в сутки (р):</legend>
+                <div class="price-check">
+                    <div class="min-price">
+                        <label for="min">От</label>
+                        <input type="text" name="min-price" value="0" id="min">
                     </div>
-                    <div class="range">
-                        <div class="scale">
-                            <div class="scale-active"></div>
-                        </div>
-                        <div class="toggle toggle-left"></div>
-                        <div class="toggle toggle-right"></div>
+                    <div class="max-price">
+                        <label for="max">До</label>
+                        <input type="text" name="max-price" value="3000" id="max">
                     </div>
+                </div>
+                <div class="range">
+                    <div class="scale">
+                        <div class="scale-active"></div>
+                    </div>
+                    <div class="toggle toggle-left"></div>
+                    <div class="toggle toggle-right"></div>
+                </div>
             </fieldset>
             <button type="submit" class="filter-button button">Показать</button>
         </form>
@@ -90,13 +93,13 @@
                     <li><a href="#">По типу</a></li>
                     <li><a href="#">По рейтингу</a></li>
                 </ul>
-                <button class="button-up" type="button">Вверх</button>
-                <button class="button-down" type="button">Вниз</button>
+                <a class="button-up" href="#">Вверх</a>
+                <a class="button-down" href="#">Вниз</a>
             </div>
             <div class="found-list">
                 <ul>
                     <li>
-                        <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Гостиница">
+                        <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Гостиница-Amara Resort &amp; Spa">
                         <h2>Amara Resort &amp; Spa</h2>
                         <div>
                             <p>Гостиница</p>
@@ -117,7 +120,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Мотель">
+                        <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Мотель-Desert Quail Inn">
                         <h2>Desert Quail Inn</h2>
                         <div>
                             <p>Мотель</p>
@@ -137,7 +140,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Апартаменты">
+                        <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Апартаменты-Villas at Poco Diablo">
                         <h2>Villas at Poco Diablo</h2>
                         <div>
                             <p>Апартаменты</p>
@@ -170,8 +173,8 @@
         </div>
         <div class="footer-logo">
             <p>Website by</p>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img class="logo" src="img/logo-name.png" width="115" height="41" alt="Логотип HTML Academy">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Перейти на сайт HTML Academy, интенсив уровень 1">
+                <img class="logo" src="img/logo-name.png" width="115" height="41" alt="Логотип HTML Academy">
             </a>
         </div>
     </footer>
