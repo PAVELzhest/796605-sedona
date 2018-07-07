@@ -6,7 +6,7 @@
     <title>Гостиницы</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="hotels-page">
@@ -33,23 +33,20 @@
                     <legend>Инфраструктура:</legend>
                     <ul class="sedona-list">
                         <li class="filter-option">
-                            <label class="filter-option-item">
-                                <input class="checkbox visually-hidden" type="checkbox" name="pool" checked>
-                                <span class="checkbox-indicator"></span>
+                            <input class="checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked>
+                            <label for="pool">
                                 Бассейн
                             </label>
                         </li>
                         <li class="filter-option">
-                            <label class="filter-option-item">
-                                <input class="checkbox visually-hidden" type="checkbox" name="parking">
-                                <span class="checkbox-indicator"></span>
+                            <input class="checkbox visually-hidden" type="checkbox" name="parking" id="parking">
+                            <label for="parking">
                                 Парковка
                             </label>
                         </li>
                         <li class="filter-option">
-                            <label class="filter-option-item">
-                                <input class="checkbox visually-hidden" type="checkbox" name="wi-fi">
-                                <span class="checkbox-indicator"></span>
+                            <input class="checkbox visually-hidden" type="checkbox" name="wi-fi" id="wi-fi" disabled>
+                            <label for="wi-fi">  
                                 Wi-fi
                             </label>
                         </li>
@@ -59,23 +56,20 @@
                     <legend>Тип жилья:</legend>
                     <ul class="sedona-list">
                         <li class="filter-option">
-                            <label class="filter-option-item">
-                                <input class="checkbox visually-hidden" type="checkbox" name="hotel" checked>
-                                <span class="checkbox-indicator"></span>
+                            <input class="checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+                            <label for="hotel">
                                 Гостиница
                             </label>
                         </li>
                         <li class="filter-option">
-                            <label class="filter-option-item">
-                                <input class="checkbox visually-hidden" type="checkbox" name="motel" checked id="filter-motel">
-                                <span class="checkbox-indicator"></span>
+                            <input class="checkbox visually-hidden" type="checkbox" name="motel" id="motel" checked>
+                            <label for="motel">
                                 Мотель
                             </label>
                         </li>
                         <li class="filter-option">
-                            <label class="filter-option-item">
-                                <input class="checkbox visually-hidden" type="checkbox" name="apartment" checked>
-                                <span class="checkbox-indicator"></span>
+                            <input class="checkbox visually-hidden" type="checkbox" name="apartment" id="apartment" checked disabled>
+                            <label for="apartment">
                                 Апартаменты   
                             </label>
                         </li>
