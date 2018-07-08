@@ -656,9 +656,22 @@ a {
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
 }
-.checkbox:disabled + label::after {
+
+.checkbox:disabled + label::after{
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-off-disabled.svg");
+    background-repeat: no-repeat;
     opacity: 0.3;
 }
+
+.checkbox:checked:disabled + label::after {
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-on-disabled.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+} 
 .price {
     width: 320px;
     margin-left: auto;
@@ -814,6 +827,7 @@ a {
 .sort-item .active {
     color: #81b3d2;
     opacity: 1;
+    border: none;
     cursor: default;
 }
 .found-sort ul {
